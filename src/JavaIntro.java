@@ -17,10 +17,10 @@ public class JavaIntro {
         //println vs. print
         System.out.println(); // любой вывод требует чего то на выход - знак следующей строчки
         System.out.print(""); //error
-        // showOddNumbers();
-        // showReverseOrderOfNumbers();
-        // getSumOfNumbers();
-       // showTheSubsequenceOfNumbers();
+        showOddNumbers();
+        showReverseOrderOfNumbers();
+        getSumOfNumbers();
+        showTheSubsequenceOfNumbers();
         showTheSubsequenceOfNegativeNumbers();
     }
 
@@ -62,10 +62,10 @@ public class JavaIntro {
     public static void showTheSubsequenceOfNegativeNumbers() {
         int a = 0;
         while (-45 <= a) {
-            System.out.print(a +" ");
+            System.out.print(a + " ");
             a = a - 5;
         }
     }
-    }
+}
 
 
