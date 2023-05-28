@@ -60,13 +60,12 @@ public class JavaIntro {
     }
 
     public static void showTheSubsequenceOfNegativeNumbers() {
-        int a = 5;
-        int b = 5;
+        int a = 0;
         while (-45 <= a) {
-            System.out.print(a - b);
-            a = a - b;
-
+            System.out.print(a +" ");
+            a = a - 5;
         }
     }
-}
+    }
+
 
