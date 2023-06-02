@@ -20,7 +20,8 @@ public class JavaIntro {
         System.out.print(""); //error
         showIfTheNumberIncludedInTheArray();
         removeTheNumberFormTheArray();
-        arrayOfRandomNumbers();
+        createArrayOfRandomNumbers();
+        compareTwoArrays();
 
     }
 
@@ -80,11 +81,9 @@ public class JavaIntro {
                 System.out.println(numbersN[x] + " ");
             }
             System.out.println();
-
         }
     }
-
-    public static void arrayOfRandomNumbers() {
+    public static void createArrayOfRandomNumbers() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the length of the array :");
         int length = scanner.nextInt();
@@ -106,13 +105,50 @@ public class JavaIntro {
                 min = array1[x];
             }
             sum = sum + array1[x];
-             average = (double) sum / array1.length;
+            average = (double) sum / array1.length;
         }
         System.out.println("Maximum :" + max);
         System.out.println("Minimum:" + min);
         System.out.println("Average: " + average);
     }
+    public static void compareTwoArrays() {
+        int[] array1 = {5, 9, 3, 12, 7};
+        int[] array2 = {8, 6, 14, 21, 0};
+
+        int sum1 = array1[0];
+        double average1 =0;
+        for (int x = 0; x < array1.length;x++) {
+            System.out.print("Array 1 :");
+            System.out.println(Arrays.toString(array1));
+            sum1 = sum1 + array1[x];
+            average1 = (double) sum1 / array1.length;
+            System.out.print("Average1:" + average1 + "\t ");
+            break;
+        }
+        System.out.println();
+        int sum2 = array1[0];
+        double average2 = 0;
+        for ( int x = 0; x < array2.length; x++) {
+            System.out.print("Array2:");
+            System.out.println(Arrays.toString(array2));
+            sum2 = sum2 + array2[x];
+            average2 = (double) sum2 / array2.length;
+            System.out.println("Average2:" + average2 + " \t");
+            break;
+        }
+        if (average1 > average2) {
+            System.out.println("Average1 is bigger .");
+        }
+        else if (average1 < average2) {
+            System.out.println("Average2 is bigger.");
+        }
+        else  {
+            System.out.println("Both averages are equal");
+        }
+    }
 }
+
+
 
 
 
